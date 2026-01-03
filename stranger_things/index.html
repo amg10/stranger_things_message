@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranger Things Wall</title>
+    <meta property="og:title" content="Stranger Things Message">
+    <meta property="og:description" content="I have a message for you from the Upside Down...">
+    <meta property="og:image" content="upside_down.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="startOverlay" class="start-overlay">
+        <div class="start-content">
+            <h1>STATION 011</h1>
+            <p>INCOMING TRANSMISSION FROM THE UPSIDE DOWN</p>
+            <button id="startButton" onclick="initiateTransmission()">LISTEN TO THE WALL</button>
+        </div>
+    </div>
+    <div class="wall-container">
+        <div class="wall" id="wall">
+            <div class="row" id="row-1"></div> <div class="row" id="row-2"></div> <div class="row" id="row-3"></div> </div>
+    </div>
+
+    <div class="controls">
+        <input type="text" id="messageInput" placeholder="TYPE YOUR MESSAGE...">
+        <button onclick="generateLink()">GET LINK</button>
+        <div id="linkOutput"></div>
+    </div>
+    <div id="jumpscare" class="jumpscare-overlay">
+        <img id="overlayImage" src="" alt="Secret Message">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
